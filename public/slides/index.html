@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050b08" />
+    <title>POV CUT の技術構成と機能</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #050b08; color: #e2f2e6; }
+      main { max-width: 1440px; margin: auto; padding: 28px 16px 48px; }
+      h1 { font-size: clamp(24px, 5vw, 38px); color: #36e76a; }
+      h2 { font-size: 22px; margin: 0 0 16px; }
+      p { line-height: 1.8; }
+      a { color: #8ef7aa; text-underline-offset: 4px; }
+      a:focus-visible { outline: 3px solid #8ef7aa; outline-offset: 5px; }
+      section { margin-top: 36px; }
+      .slide { display: block; }
+      img { display: block; width: 100%; height: auto; border: 1px solid #255d36; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 12px; }
+      .links a { display: inline-flex; align-items: center; min-height: 44px; }
+      footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid #255d36; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>POV CUT の技術構成と機能</h1>
+      <p>画像をタップすると大きく開けます。スマートフォンは横向きにすると文字が読みやすくなります。</p>
+      <section aria-labelledby="architecture">
+        <h2 id="architecture">① 技術構成</h2>
+        <a class="slide" href="01-technical-architecture.png" aria-label="技術構成の画像を大きく開く">
+          <img src="01-technical-architecture.png" width="1672" height="941" alt="POV CUTの技術構成。GitHub ActionsとGitHub Pagesでアプリを配信し、ReactとTypeScriptで編集画面を構成。MediabunnyとWebCodecsで動画を読み込み、Canvas 2DとWeb Audio APIで編集し、MP4またはWebMを端末に保存。編集内容はlocalStorageとJSONで保存。" />
+        </a>
+        <div class="links">
+          <a href="01-technical-architecture.png">画像を大きく開く</a>
+          <a href="01-technical-architecture.png" download>PNGをダウンロード</a>
+        </div>
+      </section>
+      <section aria-labelledby="features">
+        <h2 id="features">② 主な機能</h2>
+        <a class="slide" href="02-features.png" aria-label="主な機能の画像を大きく開く">
+          <img src="02-features.png" width="1672" height="941" alt="POV CUTの主な機能。2.5秒単位のクリップ編集、中央の文字と複数ハッシュタグ、縦型と横型、3種類の切り替え効果、編集内容の自動保存とJSON保存、MP4とWebMへの書き出し。動画は端末内で編集。" />
+        </a>
+        <div class="links">
+          <a href="02-features.png">画像を大きく開く</a>
+          <a href="02-features.png" download>PNGをダウンロード</a>
+        </div>
+      </section>
+      <footer><a href="../">POV CUTを使う</a></footer>
+    </main>
+  </body>
+</html>
