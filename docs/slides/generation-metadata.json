@@ -1,0 +1,34 @@
+{
+  "generated": "2026-09-22",
+  "tool": "built-in image_gen",
+  "model_version": "not exposed by tool",
+  "sources": "pov-cut-github current published source",
+  "images": [
+    {
+      "file": "01-technical-architecture.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1384813,
+      "sha256": "d8a327af7777f0a9c38889c25fadb9028f652cf2c1a2b2e56f28f0b3cb52ce2e"
+    },
+    {
+      "file": "02-features.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1594468,
+      "sha256": "df00fd16b35ba9e18f5f8f3de555a4a97dc339a9393ece588d5c719db7e77d78"
+    }
+  ],
+  "revisions": [
+    {
+      "file": "02-features-rokid-v2.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1608594,
+      "sha256": "2de9175eccd7a142a2feaeb90df6a77a187ebe807b4efb6b9a5727b718e85388",
+      "edit": "Rokid Glasses illustration corrected from official product photographs",
+      "prompt_file": "rokid-correction-prompt.md",
+      "tool": "built-in image_gen"
+    }
+  ]
+}
